@@ -7,7 +7,7 @@ app.set("view engine","ejs")
 app.set("views",'./views')
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-
+//all routes can access
 const mainRoutes=require('./app')
 app.use('/',mainRoutes);
 // const connection = connect()
