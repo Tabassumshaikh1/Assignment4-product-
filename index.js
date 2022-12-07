@@ -11,7 +11,7 @@ app.use(express.urlencoded({extended:false}));
 const mainRoutes=require('./app')
 app.use('/',mainRoutes);
 // const connection = connect()
-const DB = mongoose.connect('mongodb://127.0.0.1:27017/myProducts',{useNewUrlParser:true,useUnifiedTopology:true},(err)=>{
+const DB = mongoose.connect('mongodb+srv://Tabassum:Tabassum1234@cluster0.f8r4yqy.mongodb.net/myProducts',{useNewUrlParser:true,useUnifiedTopology:true},(err)=>{
     if(err){
         console.log(err);   
     } 
